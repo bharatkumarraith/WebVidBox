@@ -1,0 +1,24 @@
+.nav-links a {
+    text-decoration: none;
+    color: black; /* Default color */
+    padding: 10px; /* Optional: Adjust padding for better spacing */
+    display: block; /* Ensures the link takes full width for better clickable area */
+    border-radius: 5px; /* Optional: Adds rounded corners */
+}
+
+.nav-links a.active-link {
+    background-color: #0d6efd;
+    /* Fill background for active link */
+    color: white; /* White text for active link */
+}
+
+
+.header{
+    background-color: #ffffff;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.side-nav{
+    background-color: #ffffff;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}

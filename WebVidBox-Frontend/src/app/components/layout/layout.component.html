@@ -1,0 +1,29 @@
+<div class="d-flex flex-column h-100">
+    <div class="p-2 header">
+        <div class="d-flex">
+            <div class="p-2">
+                <h1 class="text-primary">Dashboard</h1>
+            </div>
+            <div class="ms-auto p-2">
+                <button class="btn btn-primary" (click)="logOut()">Logout</button>
+            </div>
+        </div>
+    </div>
+    <div class="row flex-grow-1">
+        <div class="col-2 p-4 d-flex flex-column align-items-stretch bg-light side-nav">
+            <div class="p-2 nav-links"><a routerLink="/home" routerLinkActive="active-link"
+                    [routerLinkActiveOptions]="{ exact: true }">
+                    Home
+                </a>
+            </div>
+            <div class="p-2 nav-links">
+                <a routerLink="/about" routerLinkActive="active-link">About</a>
+            </div>
+        </div>
+        <div class="col-10 p-2">
+            <div style="padding: 10px;">
+                <router-outlet></router-outlet>
+            </div>
+        </div>
+    </div>
+</div>
